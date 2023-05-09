@@ -10,4 +10,3 @@ for i in range(n):
             a[i] -= 1
 for x in seq:
     print(x, end=' ')
-  
