@@ -1,7 +1,3 @@
-dx = [-1, 0, 1, 0]
-dy = [0, 1, 0, -1]
-
-
 def DFS(x, y, h):
     ch[x][y] = 1
     for i in range(4):
@@ -12,12 +8,17 @@ def DFS(x, y, h):
             DFS(xx, yy, h)
 
 
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+
 n = int(input())
 cnt = 0
 res = 0
+
 board = [list(map(int, input().split())) for _ in range(n)]
+
 for h in range(100):
-    ch = [[0] * n for _ in range(n)]
+    ch = [[0] * n for _ in range(100)]
     cnt = 0
     for i in range(n):
         for j in range(n):
