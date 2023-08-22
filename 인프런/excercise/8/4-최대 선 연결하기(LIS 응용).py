@@ -12,7 +12,4 @@ for i in range(2, n + 1):
     dy[i] = max + 1
     if dy[i] > res:
         res = dy[i]
-
 print(res)
-# 10
-# 4 1 2 3 9 7 5 6 10 8
