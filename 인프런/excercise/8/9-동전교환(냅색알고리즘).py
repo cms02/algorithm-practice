@@ -7,6 +7,3 @@ for i in range(n):
     for j in range(coin[i], m + 1):
         dy[j] = min(dy[j], dy[j - coin[i]] + 1)
 print(dy[m])
-# 3
-# 1 2 5
-# 15
